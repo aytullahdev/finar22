@@ -1,0 +1,1045 @@
+@import url('../webbox/css/main.css');
+/* popins font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+@font-face {
+    font-family: c-italic ;
+    src: url(../font/Cocogoose\ Pro\ Italic-trial.ttf);
+}
+@font-face {
+    font-family: c-italic-light;
+    src: url(../font/Cocogoose\ Pro\ Light\ Italic-trial.ttf);
+}
+/* show in big screen and hide in small screen */
+.h600{
+    display:block!important ;
+}
+.h374{
+    display: block!important;
+}
+.h1200{
+    display: none!important;
+}
+/* end */
+/* font use */
+.c-italic{
+    font-family: c-italic!important;
+}
+.c-italic-light{
+    font-family: c-italic-light!important;
+}
+.popins{
+    font-family: 'Poppins', sans-serif;
+}
+/* active color */
+.active1{
+    color: #FFB747;
+}
+
+/* active color end */
+/* main nav */
+.mainnavcontainer{
+    background-color: #F5F5F5;
+}
+.logandnav{
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.logo > img{
+    width: 100%;
+}
+/* side nav */
+.sidenavcontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.sidenav{
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+.sidenav > li{
+    margin-left:20px ;
+}
+.sidenav>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.sidenavbtn{
+    background-color: black;
+    color: white!important;
+    display: inline-block;
+    height: 28px;
+    width: 96px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.mainnav{
+   padding: 0;
+   margin: 0;
+}
+.mainnav>ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.mainnav>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 19px;
+
+}
+.mainnav>ul>li>a:hover{
+    color: #FF9F0A;
+}
+
+/* mainnav end */
+
+/* form section */
+.fromsec{
+    color: white;
+    height: 300px;
+    background-image: url('../img/carlight1.jpg');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+
+}
+.fromsec > h2{
+    font-size: 21px;
+}
+.fromdiv{
+    width:900px;
+    margin: auto;
+    
+   
+  
+}
+.spanformobile{
+    display: none;
+}
+.inputbox{
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: 120px 400px 40px 200px 60px;
+
+}
+.inputbox > span{
+    background-color: #354D64;
+    padding: 3px;
+    font-size: 18px;
+    text-align: center;
+}
+.inputbox > .lbox{
+    background-color: white;
+    display: flex;
+    border: none;
+    height: 100%;
+    
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox > .lbox>img{
+   height: 30px;
+}
+.fromdiv >form> .inputbox > input{
+    padding-left: 10px;
+    height: 50px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+}
+.sbtn{
+    background-color:#FFB747;
+    border: none;
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+    
+}
+.sbtn > i{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+.optionbox{
+    width: 75%;
+
+    background-color: #354D64;
+}
+.optionbox > .btn-group{
+    display: grid;
+    grid-gap: 0;
+    padding: 0;
+    grid-template-columns: repeat(5,135px);
+}
+
+.optionbox > .btn-group > label> span{
+    font-size: 12px;
+    color: white;
+}
+/* from section end */
+/* gunu firsatlarl section start */
+.gununcardcontainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  
+   
+    
+}
+.gununcardcontainer::before{
+    content: '';
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    top: -13%;
+    left: -15%;
+    background-color: #FFB747;
+}
+.gununcard{
+    position: relative;
+    height: 400px;
+    width: 345px;
+    
+}
+.gununcard > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index:-1;
+    left: 0;
+}
+.gununcard > .overlay{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    bottom: 0;
+}
+.gununcard > .overlay > h4{
+    color: white;
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+.gununcard > .overlay > p{
+    color: #c9c9c9;
+    
+    font-size: 13px;
+}
+.gununcard > .overlay > a{
+    text-decoration: none;
+    color: #FF9F0A;
+    font-size: 13px;
+    
+}
+.gununcard > .overlay > a > i{
+    padding-left: 10px;
+    font-size: 11px;
+    
+}
+.gununcard > .overlay > a:hover{
+   text-decoration: underline;
+}
+.gununcardcontainer > .owl-dots{
+    display: none;
+}
+.gununcardcontainer > .owl-nav{
+    position: absolute;
+    right: -50px;
+    top: -60px;
+    right: 180px;
+    width: 70px;
+    display: flex!important;
+    justify-content: space-around;
+
+}
+.gununcardcontainer > .owl-nav>.owl-next{
+    border: 1px solid white!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white!important;
+}
+.gununcardcontainer  > .owl-nav>.owl-prev{
+    border: 1px solid white!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white!important;
+}
+.gununcardcontainer > .owl-nav .owl-next:hover{
+    color: white!important;
+}
+.gununcardcontainer  > .owl-nav .owl-prev:hover{
+    color: white!important;
+}
+
+
+/* 
+gunnu fairstlar1 section end */
+/* Nasil Calisir section */
+.card2{
+    width: 225px;
+   text-align: center;
+}
+.card2 > h3{
+    
+    font-size: 20px;
+} 
+.card2 > p{
+    
+    font-size: 13px;
+}
+/* end */
+/* trendcard */
+.trendcardcontainer{
+    position: relative;
+}
+.trendcard{
+    width: 300px;
+    height: 270px;
+    position: relative;
+    
+}
+.trendcard >img{
+    width: 100%;
+    position: absolute;
+    height: 90%;
+}
+.trendcard > .overlay{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-bottom:20px ;
+    color: white;
+    text-align: center;
+}
+.trendcard > .overlay > h4{
+    background: #354d64cb;
+    display: inline-block;
+    width: 50%;
+}
+.trendcard > .overlay > h5{
+    background: #354d64d8;
+    
+   
+}
+.trendcard > .overlay > .trendbtn{ 
+    text-decoration: none;
+    color: white;
+    background: #FFB747;
+    height: 37px;
+    width: 142px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;    
+    cursor: pointer;
+}
+.trendbtn:hover{
+    background-color: #354D64!important;
+}
+.trendcardcontainer > .owl-dots{
+    display: none;
+}
+.trendcardcontainer > .owl-nav{
+    position: absolute;
+    right: -50px;
+    top: -60px;
+    right: 50px;
+    width: 70px;
+    display: flex!important;
+    justify-content: space-around;
+    
+}
+.trendcardcontainer> .owl-nav>.owl-next{
+    border: 1px solid #354D64!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #354D64!important;
+}
+.trendcardcontainer > .owl-nav>.owl-prev{
+    border: 1px solid #354D64!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #354D64!important;
+}
+.trendcardcontainer > .owl-nav .owl-next:hover{
+    color: white!important;
+}
+.trendcardcontainer > .owl-nav .owl-prev:hover{
+    color: white!important;
+}
+
+
+/* trendcard end */
+/* hizmetlercard start */
+
+
+.hizmetlercard{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 75px;
+   
+
+   
+}
+.hizmetlercardcontainer > .owl-dots{
+    display: none;
+}
+.hizmetlercardcontainer > .owl-nav{
+    position: absolute;
+    right: -50px;
+    top: -60px;
+    right: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.hizmetlercardcontainer> .owl-nav>.owl-next{
+    border: 1px solid #354D64!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #354D64!important;
+}
+.hizmetlercardcontainer > .owl-nav>.owl-prev{
+    border: 1px solid #354D64!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #354D64!important;
+}
+.hizmetlercardcontainer > .owl-nav .owl-next:hover{
+    color: white!important;
+}
+.hizmetlercardcontainer > .owl-nav .owl-prev:hover{
+    color: white!important;
+}
+/* reviews card */
+.reviewssection{
+    width: 70%;
+    position: relative;
+   
+}
+.reviewssection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20%;
+    z-index: -1;
+    height: 100%;
+    width: 130%;
+    background: #FFB747;
+    
+}
+.reviewcard{
+   
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.review{
+   
+    
+    height: 80px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    
+}
+.review > .imgbox{
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    width: 66px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.review > .imgbox >img{
+    height: 100%;
+    width: 100%;
+}
+.review1{
+    padding-top: 10px;
+  margin-bottom: 50px;
+    
+}
+.review2{
+    margin-top: 20px;
+    
+}
+.reviewssection > .owl-dots{
+    display: none;
+}
+.reviewssection > .owl-nav{
+    position: absolute;
+    right: -50px;
+    bottom: 0;
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.reviewssection > .owl-nav>.owl-next{
+    border: 1px solid white!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white!important;
+}
+.reviewssection > .owl-nav>.owl-prev{
+    border: 1px solid white!important;
+    font-size: 20px!important;
+    font-weight: 800;
+    display: inline-block;
+    height: 30px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white!important;
+}
+
+/* end */
+    /* arbamortak start */
+    .sec06{
+   
+        background: transparent linear-gradient(180deg, #5B00C2 0%, #4D12C5 49%, #0565B9 100%) 0% 0% no-repeat padding-box;
+        opacity: 1;
+    }
+    .sec06rcard > h4{
+        
+        font-size: 35px;
+    }
+    .sec06rcard > h3{
+        
+        font-size: 38px;
+    }
+    .sec06rcard > p{
+        
+        font-size: 26px;
+    }
+    .cbtn1{
+        display: block ;
+        border-radius: 11px;
+        background-color: white;
+        color: #FFB747;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 116px!important;
+        height: 35px!important;
+      
+    }
+    /* end */
+/* footer */
+footer{
+    background-color: #2F2E2B;
+    
+}
+/* footer adress */
+.fcard>h5{
+    font-size: 17px;
+}
+.fcard{
+    font-size: 15px;
+
+}
+.fcard > ul > li>a{
+    text-decoration: none;
+    color: white;
+}
+.fcard > ul > li>a:hover{
+    color: #FFB747;
+}
+address > ul > li{
+    margin-top: 20px;
+    cursor: pointer;
+}
+address > ul > li:hover{
+    color: #FFB747;
+}
+.mbesisdiv{
+    height: 67px;
+    width: 85px;
+    margin: auto;
+    background-color: white;
+}
+.fbtn{
+    display: block;
+    height: 40px;
+    width: 206px;
+    background-color:#FF9F0A ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.fbtn:hover{
+    
+    background-color:#354D64 ;
+    color: white;
+   
+}
+/* footer end */
+@media only screen and (max-width: 1199px){
+    .h600{
+        display: none!important;
+    }
+}
+@media only screen and (max-width: 800px){
+     /* form start */
+     .h768{
+         display: none!important;
+     }
+     .h1200{
+         display: inline-block!important;
+     }
+     .inputbox{
+       
+        grid-template-columns: 150px 250px 40px 150px 60px;
+    
+    }
+    /* mainnav */
+    .mainnav{
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height:100vh;
+        z-index: 99;
+        left: 0;
+        background-color: #F5F5F5;
+     }
+     .mainnav>ul{
+       flex-direction: column;
+       display: flex;
+       align-items: flex-start;
+       padding-top: 50px;
+     }
+     .mainnav>ul>li{
+         margin-bottom: 15px;
+     }
+     .show{
+         display: block!important;
+     }
+     .btnexit{
+         cursor: pointer;
+     }
+    /* mainnavend */
+   
+    .optionbox > .btn-group{
+        display: grid;
+        grid-gap: 0;
+        padding: 0;
+        grid-template-columns: repeat(5,130px);
+    }
+    .fromdiv{
+        width:750px;
+       
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        
+       
+      
+    }
+    .optionbox{
+        width: 650px;
+        background-color: #354D64;
+    }
+   
+    /* from end */
+   .h600{
+       display: none!important;
+   }
+   .card2{
+    width: 175px;
+  
+    }
+    .card2 > h3{
+        
+        font-size: 15px;
+    }
+    .sec06img{
+        display: none!important;
+    }
+}
+
+/* hizmetlercard end  */
+@media only screen and (max-width: 767px){
+    .h600{
+        display: none!important;
+    }
+	/*Big smartphones [426px -> 600px]*/
+    /*  */
+    .logandnav{
+        display: grid;
+        grid-template-columns: 140px auto;
+    }
+    /* form start */
+    
+    .inputbox{
+       
+        grid-template-columns: 90px 200px 40px 0px 60px;
+    
+    }
+    .inputbox > .lbox{
+        
+        margin-left: -2px;
+    }
+    .fromdiv >form> .inputbox > input{
+     
+        height: 100%;
+    } 
+    .optionbox > .btn-group{
+        display: grid;
+        grid-gap: 0;
+        padding: 0;
+        grid-template-columns: repeat(5,78px);
+    }
+    .fromdiv{
+        width:400px;
+        margin: auto;
+        
+       
+      
+    }
+    .optionbox{
+        width: 390px;
+    
+        background-color: #354D64;
+    }
+    .optionbox > .btn-group > label> span{
+        font-size: 8px;
+        display: inline-block;
+    }
+    /* from end */
+    /* gununcard start */
+    .gununcard{
+        
+        height: 200px;
+        width: 170px;
+    }
+    .gununcardcontainer::before{
+        left: -20%;
+        width: 112%;
+        height: 70%;
+        top: -21%;
+
+    }
+    .gununcard > .overlay > h4{
+        font-size: 13px;
+    
+    }
+    .gununcard > .overlay > p{
+        font-size: 10px;
+    }
+    .gununcardcontainer > .owl-nav{
+        margin-right: 5px;
+        margin-top: 15px;
+        top: -55px;
+        right: 30px;
+       
+    }
+    .gununcardcontainer > .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+        
+        font-size: 16px;
+        
+    }
+    /* gununcard end */
+    /* trendcard */
+    .trendcardcontainer > .owl-nav{
+        
+        right: 1px;
+        
+    }
+    .hizmetlercardcontainer > .owl-nav{
+        right: 1px;
+    }
+    .trendcard{
+        bottom: 0;
+        height: 155px;
+        width: 172px;
+        
+    }
+    .trendcard > img{
+        height: 80%;
+    }
+    .trendbtn{
+        font-size: 12px!important;
+        height: 21px!important;
+        width: 81px!important;
+
+    }
+    .trendcard > .overlay > h5{
+        font-size: 17px;
+
+    }
+    .trendcard > .overlay > h4{
+        font-size: 18px;
+        
+    }
+    .trendcardcontainer > .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+        
+        font-size: 16px;
+        
+    }
+    /* trendcar end */
+    /* hizmelercar start */
+    .hizmetlercard{
+        margin-right: 30px;
+    }
+    .hizmetlercardcontainer > .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+        
+        font-size: 16px;
+        
+    }
+    /* hizmetlercard end */
+    /* reviw section hide */
+    .revsec{
+        display: none;
+    }
+
+    /* footer */
+    .fcard{
+        font-size: 11px;
+        width: 170px;
+    }
+    /* card2 */
+    .card2{
+        width: 140px;
+    }
+}
+@media only screen and (max-width: 424px){
+    .sidenav > li{
+        margin-left: 10px;
+    } 
+    /* form start */
+    
+     .inputbox{
+       
+        grid-template-columns: 90px 170px 30px 0px 40px;
+    
+    }
+    .inputbox > .lbox{
+        
+        margin-left: -2px;
+    }
+    .fromdiv >form> .inputbox > input{
+     
+        height: 100%;
+    } 
+    .optionbox > .btn-group{
+        display: grid;
+        grid-gap: 0;
+        padding: 0;
+        grid-template-columns: repeat(5,66px);
+    }
+    .fromdiv{
+        width:350px;
+        margin: auto;
+        
+       
+      
+    }
+    .optionbox{
+        width: 330px;
+    
+        background-color: #354D64;
+    }
+    .optionbox > .btn-group > label> span{
+        font-size: 8px;
+        display: block;
+    }
+    /* from end */
+    .hizmetlercard{
+        margin-right: 3px!important;
+    }
+    .trendcardsection > h2{
+        font-size: 18px;
+
+    }
+    .trendcardcontainer > .owl-nav{
+       
+        
+        top: -52px;
+        right: 2px;
+      
+    }
+    .hizmetlercardcontainer > .owl-nav{
+        
+        top: -52px;
+        right: 3px;
+        
+    }
+    /* footer */
+    .fcard{
+        font-size: 11px;
+        width: 170px;
+    }
+    .fbtn{
+        width: 200px;
+    }
+    .fbtn{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 374px){
+    .sidenav > li{
+        margin-left: 7px;
+    }
+    /* hide */
+    .h374{
+        display: none!important;
+    }
+     /* form start */
+    
+     .inputbox{
+       
+        grid-template-columns: 80px 135px 40px 0px 40px;
+    
+    }
+    .fromdiv >form> .inputbox > input{
+     
+        height: 100%;
+    } 
+    
+    .inputbox > .lbox{
+        
+        margin-left: -2px;
+    }
+    .optionbox > .btn-group{
+        display: grid;
+        grid-gap: 0;
+        padding: 0;
+        grid-template-columns: repeat(5,60px);
+    }
+    .fromdiv{
+        width:300px;
+        margin: auto;
+        
+       
+      
+    }
+    .optionbox{
+        width: 295px;
+    
+        background-color: #354D64;
+    }
+    .optionbox > .btn-group > label> span{
+        font-size: 9px;
+        display: inline-block;
+    }
+    /* from end */
+    .gununcard{
+        margin: auto;
+    }
+     .trendcard{
+        margin: auto!important;
+    }
+    .trendcardcontainer > .owl-nav{
+        display: block!important;
+        position: absolute;
+        top: -55px;
+        right: -10px;
+       
+    }
+    .trendcardsection > h2{
+        font-size: 18px;
+
+    }
+    .hizmetlercard{
+        margin-right: 0px;
+    }
+    .trendcardcontainer > .owl-nav{
+        display: flex!important;
+        
+    }
+    .hizmetlercardcontainer > .owl-nav{
+        
+        top: -52px;
+                
+        right: -8px;
+            }
+            /* footer */
+            .fcard{
+                font-size: 11px;
+                width: 143px;
+            }
+            .fbtn{
+                width: 120px;
+            }
+            .card2{
+                width: 145px;
+               
+            }
+            .card2 > h3{
+               font-size: 12px;
+            }
+            .card2 > p{
+                font-size: 10px;
+             }
+             .sec06rcard > h3{
+        
+                font-size: 20px;
+             }
+            .sec06rcard > h4{
+        
+                font-size: 24px;
+                }
+            .sec06rcard > p{
+        
+                font-size: 17px;
+            }
+}

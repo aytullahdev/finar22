@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arabamo</title>
+</head>
+<body>
+	
+	<!-- top nav -->
+	<div class="container-fluid bg-light p-0 m-0 topnav">
+		<div class="container d-flex justify-content-end justify-content-md-end justify-content-lg-between" >
+			<ul class=" list-unstyled p-0 m-0">
+				<li> <a href="#" class=" text-decoration-none text-dark"> <img src="img/isletme.png" class="pe-1" alt="">İşletme kayıt</a></li>
+			</ul>
+			<ul class="list-unstyled d-lg-flex d-md-none d-sm-none d-none gap-5 m-0 p-0">
+				<li><a href="#" class=" text-decoration-none text-dark"> <img src="img/kargo.png" class="pe-1"  alt="">Siparişinizi takip edin</a></li>
+				<li><a href="#" class=" text-decoration-none text-dark "><img src="img/yardìm.png" class="pe-1" alt="">Yardım & Destek </a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- main nav -->
+	<div class="container-fluid mainnavcontainer">
+		<div class="container">
+			<div class="logandnav">
+				<div class="logo">
+					<img src="./img/logo2.png" alt="">
+				</div>
+				<div class="sidenavcontainer">
+					<ul class="list-unstyled sidenav ">
+						<li><a href="#"><img src="img/talep.png" class="h1200" alt=""></a></li>
+						<li><a href="#"><img src="img/sepet.png" class="pe-1"alt=""><span class="h768">Sepet</span></a></li>
+					<li><a href="#"><img src="img/giris.png" class="pe-1" alt=""><span  class="h768">Giriş yap</span></a></li>
+					<li><a href="#" class="sidenavbtn h768">Kayıt ol</a></li>
+					<li><a><img src="img/menu.png" class="h1200" alt="" id="menubtn"></a></li>
+					</ul>
+				</div>
+				
+	
+			</div>
+			<div class="row">
+				<div class="col-lg-12 
+				mx-auto mainnav">
+					<div class="btnexit float-end
+					m-3 h1200">
+							<img src="/img/exit.svg" alt="">
+					</div>
+					<ul class="">
+						<li><a href="#">YEDEK PARÇA</a></li>
+						<li><a href="#">AKSESUAR</a></li>
+						<li><a href="#">SERVİSLER</a></li>
+						<li><a href="#">NASIL ÇALIŞIR</a></li>
+						<li><a href="#">KAMPANYALAR</a></li>
+						<li><a href="#">İLETİŞİM</a></li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+	<!-- form section	 -->
+	<div class="container-fluid fromsec">
+
+		<h2 class="text-center py-3 c-italic">Aradığın ürün ve hizmet tek tıkla burada</h2>
+		<div class="fromdiv">
+			<form accept="#" method="post">
+				<div class="inputbox">
+					<span class="py-2 hide768">Kategori seçin</span>
+					<input type="text" class="inp1"  name="kategori" placeholder="Lastik değişimi, far temizleme, ışık söndürme...">
+					<div class="lbox">
+						<img src="./img/konum.png" alt="">
+					</div>
+					<input type="text" class="inp2" name="location" placeholder="İstanbul, Şişli">
+					<button class="sbtn"><i class="bi bi-search"></i></button>
+					
+				</div>
+				<div class="optionbox">
+					<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" value="1">
+						<label class="btn btn-outline-danger border-0" for="btnradio1">
+							<img src="img/aksesuarwhite.png" alt="">
+							<span>Aksesuar</span>
+						</label>
+					  
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" value="2">
+						<label class="btn btn-outline-danger border-0" for="btnradio2">
+							<img src="./img/yedekparcawhite.png" alt="">
+							<span>Yedek Parça</span>
+						</label>
+					  
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" value="3">
+						<label class="btn btn-outline-danger border-0" for="btnradio3">
+							<img src="img/otoyikamawhite.png" alt=""><span>Oto Yıkama</span>
+						</label>
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" value="4">
+						<label class="btn btn-outline-danger border-0" for="btnradio4">
+							<img src="img/otoeksperwhite.png" alt="">
+							<span>Oto Ekspertiz</span></label>
+						<input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" value="5">
+							<label class="btn btn-outline-danger border-0" for="btnradio5">
+								<img src="img/ototamirhanewhite.png" alt="">
+								<span>Oto Tamirhane</span></label>
+
+					  </div>
+
+				</div>
+				
+
+
+			</form>
+
+		</div>
+
+	</div>
+	<!-- from section end -->
+	<!-- section Günün Fırsatları -->
+	<div class="container py-3">
+		<h2 class=" c-italic pb-5">Günün Fırsatları</h2>
+		<div class="gununcardcontainer owl-carousel owl-theme">
+			<div class="gununcard">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="cardimg">
+				<div class="overlay">
+					<h4>Kis Lastiklerin de 300$ 'ye varan indirimler</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus architecto, quaerat consequuntur totam recusandae similique voluptate! Ab non voluptatem veniam saepe?</p>
+				<a href="#">DAHA FAZLA <i class="bi bi-chevron-right"></i></a>
+
+				</div>
+			</div>
+			<div class="gununcard">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="cardimg">
+				<div class="overlay">
+					<h4>Kis Lastiklerin de 300$ 'ye varan indirimler</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus architecto, quaerat consequuntur totam recusandae similique voluptate! Ab non voluptatem veniam saepe?</p>
+				<a href="#">DAHA FAZLA <i class="bi bi-chevron-right"></i></a>
+
+				</div>
+			</div>
+			<div class="gununcard">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="cardimg">
+				<div class="overlay">
+					<h4>Kis Lastiklerin de 300$ 'ye varan indirimler</h4>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem delectus architecto, quaerat consequuntur totam recusandae similique voluptate! Ab non voluptatem veniam saepe?</p>
+				<a href="#">DAHA FAZLA <i class="bi bi-chevron-right"></i></a>
+
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<!-- card2 Nasil Calisir -->
+	<div class=" container-fluid">
+		<h1 class=" text-center py-2" style="font-size: 25px;">Nasıl çalışır</h1>
+		<div class="container">
+			<div class="row d-flex justify-content-between py-2">
+				<div class="col-lg-2 col-md-4 card2">
+					<img src="img/n1.png" class=" img-fluid" alt="">
+					<h3 class="py-2">Konumuzu Belirleyin</h3>
+					<p>Size yakın indirimli servisleri keşfedin</p>
+				</div>
+				<div class="col-lg-2 col-md-4 card2">
+					<img src="img/n2.png" class=" img-fluid" alt="">
+					<h3 class="py-2">Aradığınızı Bulun</h3>
+					<p>İhtiyacınıza yönelik hizmeti veya ürünü belirleyin</p>
+				</div>
+				<div class="col-lg-2 col-md-4 card2">
+					<img src="img/n3.png" class=" img-fluid" alt="">
+					<h3 class="py-2">Online Ödeyin</h3>
+					<p>Online ödeme avantajlarından yararlanın</p>
+				</div>
+				<div class="col-lg-2 col-md-4 card2">
+
+					<img src="img/n4.png" class=" img-fluid" alt="">
+					<h3 class="py-2">Birebir Görüşme</h3>
+					<p>Birebir görüşmeler yaparak aklınızda ki soruları işletmelere mesaj olarak gönderin</p>
+				</div>
+				
+				
+			
+				
+			</div>
+		</div>
+	</div>
+	<!-- section oto yikama trend -->
+	<div class="container mb-5 trendcardsection">
+		<h2 class=" c-italic">Oto Yıkama <span class="active1">Trend</span></h2>
+		<div class="trendcardcontainer owl-carousel owl-theme">
+			<div class="trendcard item">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+				<div class="overlay">
+					<h5>Erdemli oto eksper</h5>
+					<h4>45 TL</h4>
+					<a href="#" class="trendbtn">Satin al</a>
+				</div>
+			</div>
+			<div class="trendcard item">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+				<div class="overlay">
+					<h5>Erdemli oto eksper</h5>
+					<h4>45 TL</h4>
+					<a href="#" class="trendbtn">Satin al</a>
+				</div>
+			</div>
+			<div class="trendcard item">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+				<div class="overlay">
+					<h5>Erdemli oto eksper</h5>
+					<h4>45 TL</h4>
+					<a href="#" class="trendbtn">Satin al</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- end oto yikama trend -->
+	<!-- section Oto Eksper trend -->
+	<div class="container mb-5 trendcardsection">
+		<h2 class=" c-italic">Oto Eksper <span class="active1">Trend</span></h2>
+		<div class="trendcardcontainer owl-carousel owl-theme">
+			<div class="trendcard item">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+				<div class="overlay">
+					<h5>Erdemli oto eksper</h5>
+					<h4>45 TL</h4>
+					<a href="#" class="trendbtn">Satin al</a>
+				</div>
+			</div>
+			<div class="trendcard item">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+				<div class="overlay">
+					<h5>Erdemli oto eksper</h5>
+					<h4>45 TL</h4>
+					<a href="#" class="trendbtn">Satin al</a>
+				</div>
+			</div>
+			<div class="trendcard item">
+				<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+				<div class="overlay">
+					<h5>Erdemli oto eksper</h5>
+					<h4>45 TL</h4>
+					<a href="#" class="trendbtn">Satin al</a>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!-- end Oto Ekspertrend -->
+	
+	<!-- section Popüler Hizmetler -->
+	<div class="container trendcardsection ">
+		<h2 class=" c-italic"><span class="active1">Popüler</span> Hizmetler</h2>
+		<div class="hizmetlercardcontainer owl-carousel owl-theme p-0">
+		   <!-- item 1 start -->
+			<div class="item">
+			   <!-- row 1 with 3 card -->
+			<div class="hizmetlercard">
+				<div class="trendcard">
+					<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					<div class="overlay">
+						<h5>Erdemli oto eksper</h5>
+						<h4>45 TL</h4>
+						<a href="#" class="trendbtn">Satin al</a>
+					</div>
+				</div>
+				<div class="trendcard h374">
+					<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					<div class="overlay">
+						<h5>Erdemli oto eksper</h5>
+						<h4>45 TL</h4>
+						<a href="#" class="trendbtn">Satin al</a>
+					</div>
+				</div>
+				<div class="trendcard h600">
+					<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					<div class="overlay">
+						<h5>Erdemli oto eksper</h5>
+						<h4>45 TL</h4>
+						<a href="#" class="trendbtn">Satin al</a>
+					</div>
+				</div>
+				
+			</div>
+			<!-- row 2 -->
+			<div class="hizmetlercard">
+				<div class="trendcard">
+					<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					<div class="overlay">
+						<h5>Erdemli oto eksper</h5>
+						<h4>45 TL</h4>
+						<a href="#" class="trendbtn">Satin al</a>
+					</div>
+				</div>
+				<div class="trendcard h374">
+					<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					<div class="overlay h374">
+						<h5>Erdemli oto eksper</h5>
+						<h4>45 TL</h4>
+						<a href="#" class="trendbtn">Satin al</a>
+					</div>
+				</div>
+				<div class="trendcard h600">
+					<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					<div class="overlay">
+						<h5>Erdemli oto eksper</h5>
+						<h4>45 TL</h4>
+						<a href="#" class="trendbtn">Satin al</a>
+					</div>
+				</div>
+				
+				
+			</div>
+		   </div>
+		   <!-- item 1 end -->
+		   <!-- item 2 start -->
+			<div class="item">
+				<!-- row 1 with 3 card -->
+			 <div class="hizmetlercard">
+				 <div class="trendcard">
+					 <img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					 <div class="overlay">
+						 <h5>Erdemli oto eksper</h5>
+						 <h4>45 TL</h4>
+						 <a href="#" class="trendbtn">Satin al</a>
+					 </div>
+				 </div>
+				 <div class="trendcard h374">
+					 <img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					 <div class="overlay">
+						 <h5>Erdemli oto eksper</h5>
+						 <h4>45 TL</h4>
+						 <a href="#" class="trendbtn">Satin al</a>
+					 </div>
+				 </div>
+				 <div class="trendcard  h600">
+					<img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					<div class="overlay">
+						<h5>Erdemli oto eksper</h5>
+						<h4>45 TL</h4>
+						<a href="#" class="trendbtn">Satin al</a>
+					</div>
+				</div>
+				 
+			 </div>
+			 <!-- row 2 -->
+			 <div class="hizmetlercard">
+				 <div class="trendcard">
+					 <img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					 <div class="overlay">
+						 <h5>Erdemli oto eksper</h5>
+						 <h4>45 TL</h4>
+						 <a href="#" class="trendbtn">Satin al</a>
+					 </div>
+				 </div>
+				 <div class="trendcard h374">
+					 <img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					 <div class="overlay">
+						 <h5>Erdemli oto eksper</h5>
+						 <h4>45 TL</h4>
+						 <a href="#" class="trendbtn">Satin al</a>
+					 </div>
+				 </div>
+				 <div class="trendcard  h600">
+					 <img src="https://picsum.photos/id/10/600/600/?blur" alt="img">
+					 <div class="overlay">
+						 <h5>Erdemli oto eksper</h5>
+						 <h4>45 TL</h4>
+						 <a href="#" class="trendbtn">Satin al</a>
+					 </div>
+				 </div>
+				 
+				 
+			 </div>
+			</div>
+			<!-- item 2 end -->
+			
+			
+	
+			
+			
+			
+		</div>
+	</div>
+	<!-- end Oto Ekspertrend -->
+	<!-- Müşterilerimizin Arabamo Deneyimleri section start-->
+	<div class="container revsec py-3">
+		<h2 class=" c-italic">Müşterilerimizin Arabamo Deneyimleri</h2>
+		<div class="reviewssection owl-theme owl-carousel">
+			<!-- item 1 start -->
+			<div class="item">
+				<div class="reviewcard">
+					<div class="review review1">
+						<div class="imgbox">
+							<img src="https://picsum.photos/id/237/200/300" alt="">
+						</div>
+						<div class="reviewtxt">
+							<h3>Mehmet Bilendin</h3>
+							<p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+						</div>
+					</div>
+					<div class="review review2">
+						<div class="imgbox ">
+							<img src="https://picsum.photos/id/237/200/300" alt="">
+						</div>
+						<div class="reviewtxt">
+							<h3>Mehmet Bilendin</h3>
+							<p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- item 1 end -->
+			<!-- item 2 -->
+			<div class="item">
+				<div class="reviewcard">
+					<div class="review review1">
+						<div class="imgbox">
+							<img src="https://picsum.photos/id/237/200/300" alt="">
+						</div>
+						<div class="reviewtxt">
+							<h3>Mehmet Bilendin</h3>
+							<p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+						</div>
+					</div>
+					<div class="review review2">
+						<div class="imgbox ">
+							<img src="https://picsum.photos/id/237/200/300" alt="">
+						</div>
+						<div class="reviewtxt">
+							<h3>Mehmet Bilendin</h3>
+							<p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- item 2 end-->
+		</div>
+	</div>
+	<!-- section arabamortak -->
+	<div class=" container-fluid sec06 py-3 m-0 ">
+		<div class="container text-light">
+			<div class="row justify-content-md-around">
+				<div class=" col-lg-6 col-md-12 sec06rcard">
+					<h4 class="py-3 c-italic">arabamortak</h4>
+			<h3 class="py-3">Potansiyel müşterinize ulaşmak artık çok kolay</h3>
+			<p class="py-3">Sadece bir tıkla satış yapabilir servisini ekleyebilirsin</p>
+					<a href="#" class="cbtn1 ">Başla</a>
+				</div>
+				<div class="col-lg-6 d-lg-block d-md-none sec06img overflow-hidden">
+					<img src="img/man.png"   class="" alt="">
+				</div>
+			</div>	
+		</div>
+	</div>
+	<!-- Müşterilerimizin Arabamo Deneyimleri end -->
+	<footer class=" container-fluid">
+		<div class=" container">
+			<div class="row d-flex justify-content-between">
+				<div class="col-lg-2    col-md-3 fcard  text-light py-3">
+					<h5>Kategori</h5>
+					<ul class=" list-unstyled text-light">
+						<li><a href="#">Aksesuar </a></li>
+						<li><a href="#">Yedek Parça</a></li>
+						<li><a href="#">Oto Yıkama</a></li>
+						<li><a href="#">Oto Ekspertiz</a></li>
+						<li><a href="#">Oto Tamirhane</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2    col-md-3 fcard  text-light py-3">
+					<h5>Yardım</h5>
+					<ul class=" list-unstyled text-light">
+						<li><a href="#">Hesap </a></li>
+						<li><a href="#">Siparişler</a></li>
+						<li><a href="#">İade ve geri ödeme</a></li>
+						<li><a href="#">politikası</a></li>
+						<li><a href="#">Kargo</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2   col-md-3 fcard   text-light py-3">
+					<h5>Destek</h5>
+					<ul class=" list-unstyled text-light">
+						<li><a href="#">Anlaşmazlıklar </a></li>
+						<li><a href="#">Arabamortak iletişim </a></li>
+						<li><a href="#">İletişim</a></li>
+					</ul>
+					<h5>Çözüm Merkezi</h5>
+					<ul class=" list-unstyled text-light">
+						<li><a href="#" class="fbtn">bağlanın </a></li>
+						</ul>
+				</div>
+				<div class="col-lg-4   col-md-3 fcard  ">
+					<img src="img/logowhite.png" class=" img-fluid" alt="">
+					<address class="text-light">
+						<ul class=" list-unstyled">
+							<li> <i class="bi bi-telephone-forward pe-1 "></i>Telefon: 05386640910 </li>
+							<li><i class="bi bi-envelope pe-1 "></i>Mail:  info@arabamo.com</li>
+							<li><i class="bi bi-geo-alt pe-1 "></i>Fulya Şişli / İstanbul</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<img src="img/payment.png" class=" img-fluid" alt="">
+
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="row text-light text-center">
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<p class="py-0 my-0">Veya</p>
+							<h5>08508508508</h5>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6">
+							<h5>Mebsis</h5>
+							<div class="mbesisdiv">
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				
+			</div>
+			<div class="row text-center text-light py-2">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h5>2021 Tüm hakları saklıdır. arabamo.com</h5>
+				</div>
+
+			</div>
+
+		</div>
+		
+	</footer>
+
+ <script src="webbox/js/bootstrap.bundle.min.js"></script>
+ <script src="webbox/js/jquery.min.js"></script>
+ <script src="webbox/js/owl.carousel.min.js"></script>
+ <script>
+	 $('.gununcardcontainer').owlCarousel({
+    loop:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        375:{
+            items:2
+        },
+        1200:{
+            items:3
+        }
+    }
+});
+	 $('.trendcardcontainer').owlCarousel({
+    loop:true,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        375:{
+            items:2
+        },
+        1025:{
+            items:3
+        }
+    }
+});
+	 $('.hizmetlercardcontainer').owlCarousel({
+    loop:true,
+	margin:60,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        375:{
+            items:1
+        },
+        1025:{
+            items:1
+        }
+    }
+});
+	 $('.reviewssection').owlCarousel({
+    loop:true,
+	margin:60,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        375:{
+            items:1
+        },
+        1025:{
+            items:1
+        }
+    }
+});
+
+ </script>
+ <!-- btn menu -->
+ <script>
+	 $("#menubtn").click(function(){
+		$(".mainnav").toggleClass('show')	;
+	 });
+	 $(".btnexit").click(function(){
+		$(".mainnav").toggleClass('show')	;
+	 });
+ </script>
+
+</body>
+</html>
+     
+ 
